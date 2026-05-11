@@ -1,0 +1,88 @@
+/* Estilização básica sem uso de frameworks como Bootstrap [cite: 11, 22] */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Menu fixo no topo: requisito de visibilidade em todas as seções [cite: 18, 31] */
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2c3e50;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 0 20px;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu ul li a:hover {
+    color: #3498db;
+}
+
+/* Configuração das seções para navegação por âncoras [cite: 40, 41] */
+.content-section {
+    padding: 120px 20px;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Estilo do Formulário de Contato [cite: 57] */
+#formContato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #34495e;
+}

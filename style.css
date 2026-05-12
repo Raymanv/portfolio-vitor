@@ -1,4 +1,4 @@
-/* Estilização básica sem uso de frameworks como Bootstrap [cite: 11, 22] */
+/* Reset de estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +9,10 @@
 body {
     background-color: #f0f2f5;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Menu fixo no topo: requisito de visibilidade em todas as seções [cite: 18, 31] */
+/* Menu de navegação fixo */
 #menu {
     position: fixed;
     top: 0;
@@ -19,6 +20,7 @@ body {
     background: #2c3e50;
     padding: 15px 0;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 #menu ul {
@@ -42,9 +44,9 @@ body {
     color: #3498db;
 }
 
-/* Configuração das seções para navegação por âncoras [cite: 40, 41] */
+/* Seções de conteúdo */
 .content-section {
-    padding: 120px 20px;
+    padding: 120px 20px 60px;
     min-height: 100vh;
     max-width: 900px;
     margin: 0 auto;
@@ -53,9 +55,32 @@ body {
 h1, h2 {
     margin-bottom: 20px;
     color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-/* Estilo do Formulário de Contato [cite: 57] */
+p {
+    margin-bottom: 15px;
+}
+
+/* Estilo do botão do Portfólio */
+.btn-github {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-github:hover {
+    background-color: #444;
+}
+
+/* Formulário de Contato */
 #formContato {
     display: flex;
     flex-direction: column;
@@ -73,6 +98,11 @@ input, textarea {
     font-size: 16px;
 }
 
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
 button {
     padding: 12px;
     background: #2c3e50;
@@ -81,6 +111,125 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #34495e;
+}/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menu de navegação fixo */
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2c3e50;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 0 20px;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu ul li a:hover {
+    color: #3498db;
+}
+
+/* Seções de conteúdo */
+.content-section {
+    padding: 120px 20px 60px;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Estilo do botão do Portfólio */
+.btn-github {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-github:hover {
+    background-color: #444;
+}
+
+/* Formulário de Contato */
+#formContato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
 button:hover {
